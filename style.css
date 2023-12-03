@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    margin: 20px;
+    padding: 20px;
+    
+}
+.bg{
+    background: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position:1fr;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    font-family: 'Raleway', sans-serif;
+}
+nav img{
+    width:60px;
+    height: 5%;
+}
+nav .navbar{
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.wrapper img {
+    width: 350px;
+    margin-top: 30px;
+}
+.card{
+    margin-top: 70px;
+}
+button{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: blue;
+    border: none;
+    color: white;
+    gap: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    width: auto;
+}
+button:hover{
+    background-color: rgba(97, 97, 240, 0.541);
+}
+.wrapper input{
+    font-size: 10px;
+}
+.enroll{
+    display: flex;
+    gap: 10px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+.ill{
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
+}
+.wow{
+    color: green;
+    text-decoration:underline;
+    font-size: 11px;
+}
+
+.cardimage{
+    background-color: hsl(0, 0%, 100%);
+    width: 200px;
+    padding: 5px;
+    box-shadow: 5px 5px 3px rgb(211, 209, 209);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.cardimage img{
+    width: 25px;
+    border-radius: 50%;
+}
+.image{
+    display: flex;
+    gap: 5px;
+    font-size: 8px;
+    align-items: center;
+}
+.text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    background-color:hsl(238, 22%, 44%);
+    padding: 50px;
+    color: white;
+}
+.icon{
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+    
+}
+.social{
+    display: flex;
+    gap: 15px;
+}
+.text1 h4{
+    margin-bottom: 15px;
+}
+.text2{
+    display: grid;    
+}
+.text2 button{
+    width: 100px;
+    margin-right: 0px;
+}
+.text2 input{
+    margin-bottom: 15px;
+}
+.foot{
+    display: grid;
+    justify-items: space-around;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    background-color: hsl(243, 87%, 12%);
+    padding: 50px;
+    color: white;
+    font-size: 10px;
+}
+ .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.fylo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mark{
+    display: flex;
+}
+
+footer img {
+    width: 50px;
+    height: 20px;
+}
+.g{
+    display:flex;
+    align-items: center;
+    gap: 7px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text button{
+    padding: 5px;
+    font-size: 7px;
+    padding: 6px 11px;
+}
+.contact p{
+    cursor: pointer;
+}
+.info p{
+    cursor: pointer;
+}
+.info p:hover{
+    color: rgba(80, 80, 236, 0.63);
+}
+.contact p:hover{
+    color: rgba(80, 80, 236, 0.63);
+}
+@media only screen and (max-width:650px){
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    .wrapper img{
+        order: -1;
+    }
+    .enroll{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 300px;
+        height: 20px;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .cards img{
+        order: -1;
+    }
+    .cardimage{
+        margin: 40px auto;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        
+    }
+    .mark{
+        justify-content: center;
+        margin: 30px 0px;
+    }
+    .text{
+        grid-template-columns: 1fr;
+    }
+    .text2{
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+    .foot{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .fylo img{
+        width: 120px;
+        height: 40px;
+    }
+    .g{
+        font-size: 14px;
+    }
+    .text2 button{
+        width: auto;
+
+    }
+    .social{
+        margin: 0 auto;
+        
+    }
+}
